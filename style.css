@@ -122,6 +122,11 @@ button:hover {
     text-align: center;
     margin-right: 0.5rem;
 }
+.social:hover {
+    color: white;
+    background-color: var(--Blue);
+    transition: 0.4s;
+}
 .copyright {
     margin-top: 2rem;
     font-size: 0.8rem;
