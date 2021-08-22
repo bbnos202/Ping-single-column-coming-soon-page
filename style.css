@@ -1,0 +1,155 @@
+/* font-family: 'Libre Franklin', sans-serif; */
+
+:root {
+--Blue: hsl(223, 87%, 63%);
+--Pale-Blue: hsl(223, 100%, 88%);
+--Light-Red: hsl(354, 100%, 66%);
+--Gray: hsl(0, 0%, 59%);
+--Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1.25rem;
+}
+.main {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.logo-text {
+    font-size: 2rem;
+}
+.dot {
+    color: var(--Blue);
+}
+.header {
+    font-weight: 300;
+    font-size: 3rem;
+    margin-top: 2.5rem;
+    color: var(--Gray);
+}
+.bold-header {
+    font-weight: 700;
+    color: black;
+}
+.text {
+    margin: 1rem 0 2rem 0;
+}
+.form-control {
+    display: inline-block;
+    position: relative;
+}
+.form-control input {
+	border: 1px solid var(--Pale-Blue);
+	border-radius: 30px;
+	display: inline-block;
+    width: 26.5rem;
+    padding: 1.2rem;
+}
+::placeholder {
+    color: var(--Pale-Blue);
+    font-size: 1rem;
+    opacity: 0.6;
+}
+.form-control input:focus {
+	outline: 0;
+}
+.form-control.success input {
+	border-color: #2ecc71;
+}
+.form-control.error input {
+	border-color: #e74c3c;
+}
+.form-control i {
+	visibility: hidden;
+	position: absolute;
+	top: 18px;
+	right: 20px;
+}
+.form-control.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+.form-control.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+.form-control small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: -20px;
+	left: 20px;
+	visibility: hidden;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+.form-control.error small {
+	visibility: visible;
+}
+button {
+    background-color: var(--Blue);
+    color: white;
+    border: none;
+    width: 12.5rem;
+    padding: 1.2rem;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    box-shadow: 0px 11px 71px -18px rgba(0,0,0,0.51);
+    margin-left: 1rem;
+    cursor: pointer;
+}
+button:hover {
+    opacity: 0.8;
+}
+.dashboard {
+    margin: 5rem auto 5rem auto;
+    width: 40%;
+    display: block;
+
+}
+.social {
+    font-size: 0.8rem;
+    color: var(--Blue);
+    border: 1px solid var(--Pale-Blue);
+    padding: 0.5rem;
+    border-radius: 25px;
+    text-align: center;
+    margin-right: 0.5rem;
+}
+.copyright {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+
+@media screen and (max-width:640px) {
+    .header {
+        font-size: 2rem;
+    }
+    .bold-header {
+        font-weight: 700;
+        color: black;
+    }
+    .text {
+        font-size: 1.1rem;
+    }
+    .form-control input {
+        width: 23rem;
+    }
+    .form-control small {
+        left: 125px;
+    }
+    button {
+        margin-top: 3rem;
+        width: 23rem;
+    }
+    .dashboard {
+        width: 75%;
+    }
+}
